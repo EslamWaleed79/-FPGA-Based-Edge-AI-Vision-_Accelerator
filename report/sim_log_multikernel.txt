@@ -1,0 +1,10 @@
+tb_multi_kernel_demo.sv:100: Warning: Calling system function $fscanf() as a task.
+tb_multi_kernel_demo.sv:100:          The functions return value will be ignored.
+[TB] Preloading BOTH kernel banks (single config pass) ...
+[TB] ==== Frame 1: selecting bank 0, NO reload since preload ====
+[TB] Frame done: bank_sel=0  captured=196/196  mismatches_so_far=0
+[TB] ==== Frame 2: selecting bank 1, NO reload since preload ====
+[TB] Frame done: bank_sel=1  captured=196/196  mismatches_so_far=0
+[TB] Total mismatches across both frames = 0 (first at global idx meaning varies per-frame; see above)
+MULTI-KERNEL TEST PASSED
+tb_multi_kernel_demo.sv:289: $finish called at 5665000 (1ps)

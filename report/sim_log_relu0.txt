@@ -1,0 +1,6 @@
+tb_conv_accelerator.sv:104: Warning: Calling system function $fscanf() as a task.
+tb_conv_accelerator.sv:104:          The functions return value will be ignored.
+[TB] config.txt -> H=32 W=32 N=3 OUT_W=16 RELU=0
+[TB] Captured 900 output pixels (expected 900)
+TEST PASSED
+tb_conv_accelerator.sv:267: $finish called at 10545000 (1ps)

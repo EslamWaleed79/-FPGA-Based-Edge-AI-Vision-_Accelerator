@@ -1,0 +1,161 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/compumarts/Desktop/olo/sscs_conv_accelerator (1)/sscs_conv_accelerator/run
+vcontrol_fsm
+Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z2 !s110 1788736377
+!i10b 1
+!s100 J?]VoSb:lnG=O:j<TKRXm0
+Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I]ZSR9PiJ<GS_>:<B7U=DH2
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+S1
+R0
+Z5 w1788694092
+8control_fsm.sv
+Fcontrol_fsm.sv
+!i122 2
+L0 29 90
+Z6 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z7 !s108 1788736377.000000
+Z8 !s107 tb_conv_accelerator.sv|top_conv_accelerator.sv|control_fsm.sv|mac_array.sv|line_buffer.sv|relu_activation.sv|
+Z9 !s90 -reportprogress|300|-sv|relu_activation.sv|line_buffer.sv|mac_array.sv|control_fsm.sv|top_conv_accelerator.sv|tb_conv_accelerator.sv|
+!i113 1
+o-sv
+Z10 tCvgOpt 0
+vline_buffer
+R1
+R2
+!i10b 1
+!s100 ZEXGOkN`Bi8WVXKja9G[D2
+R3
+IBS<?iM2@Q0=?CMV6I1[KQ2
+R4
+S1
+R0
+R5
+8line_buffer.sv
+Fline_buffer.sv
+!i122 2
+L0 36 152
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+o-sv
+R10
+vmac_array
+R1
+R2
+!i10b 1
+!s100 ;Ah9R]2DWbOB;R54]Mm4g1
+R3
+IdnK9235K8d7jU9A_J^i3C3
+R4
+S1
+R0
+R5
+8mac_array.sv
+Fmac_array.sv
+!i122 2
+L0 32 104
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+o-sv
+R10
+vrelu_activation
+R1
+R2
+!i10b 1
+!s100 ]@NYSXk>`dXJzM4fk75^f1
+R3
+IPLEO@2W_mnM?;_@jbTTaK2
+R4
+S1
+R0
+R5
+8relu_activation.sv
+Frelu_activation.sv
+!i122 2
+L0 19 31
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+o-sv
+R10
+vtb_conv_accelerator
+R1
+!s110 1788736501
+!i10b 1
+!s100 g9]GcOb[VEecgzVjHDUG=2
+R3
+IhcGcB12NC=BgXh>L3H>NG2
+R4
+S1
+R0
+w1788736287
+8tb_conv_accelerator.sv
+Ftb_conv_accelerator.sv
+!i122 3
+L0 23 260
+R6
+r1
+!s85 0
+31
+!s108 1788736501.000000
+!s107 tb_conv_accelerator.sv|
+!s90 -reportprogress|300|-work|work|-sv|tb_conv_accelerator.sv|
+!i113 1
+o-work work -sv
+R10
+vtop_conv_accelerator
+R1
+R2
+!i10b 1
+!s100 E:0mm4;P@GT]PE[;9R^P31
+R3
+IBGb1>80GW;eLkcaC@B`HA0
+R4
+S1
+R0
+R5
+8top_conv_accelerator.sv
+Ftop_conv_accelerator.sv
+!i122 2
+L0 47 176
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+o-sv
+R10

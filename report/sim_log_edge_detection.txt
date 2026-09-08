@@ -1,0 +1,9 @@
+tb_edge_detection_demo.sv:137: Warning: Calling system function $fscanf() as a task.
+tb_edge_detection_demo.sv:137:          The functions return value will be ignored.
+[TB-EDGE] config_sobel.txt -> H=32 W=32 N=3 OUT_W=16 RELU=1
+[TB-EDGE] ---- Pass 1: Sobel X ----
+[TB-EDGE] Sobel X pass: captured=900/900 mismatches=0
+[TB-EDGE] ---- Pass 2: Sobel Y ----
+[TB-EDGE] Sobel Y pass: captured=900/900 mismatches=0
+EDGE DETECTION DEMO PASSED
+tb_edge_detection_demo.sv:366: $finish called at 21025000 (1ps)
