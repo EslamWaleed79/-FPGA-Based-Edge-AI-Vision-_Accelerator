@@ -66,9 +66,9 @@ def main():
     ap.add_argument('--height', type=int, default=32)
     ap.add_argument('--width', type=int, default=32)
     ap.add_argument('--out-width', type=int, default=16)
-    ap.add_argument('--relu', type=int, default=1, choices=[0, 1],
+    ap.add_argument('--relu', type=int, default=0, choices=[0, 1],
                      help='ReLU as post-processing bonus feature (spec item #7); '
-                          'default ON for the edge-detection demo')
+                          'default OFF for the edge-detection demo') 
     ap.add_argument('--outdir', type=str, default='.')
     args = ap.parse_args()
 
