@@ -42,7 +42,8 @@ module tb_edge_detection_demo;
         .N         (N),
         .OUT_W     (OUT_W),
         .IMG_W_MAX (IMG_W_MAX),
-        .IMG_H_MAX (IMG_H_MAX)
+        .IMG_H_MAX (IMG_H_MAX),
+        .NUM_KERNELS (2)
     ) dut (
         .clk                (clk),
         .rst_n              (rst_n),
@@ -277,6 +278,7 @@ module tb_edge_detection_demo;
 
         // reset
         rst_n = 0;
+        #150;
         repeat (5) @(posedge clk);
         rst_n = 1;
         repeat (2) @(posedge clk);
