@@ -182,7 +182,7 @@ module tb_multi_kernel_demo;
         if (rst_n && out_valid) begin
             logic signed [OUT_W-1:0] expected;
             expected = (active_exp_select == 0) ? exp0_mem[out_idx][OUT_W-1:0]
-                                                  : exp1_mem[out_idx][OUT_W-1:0];
+                                                : exp1_mem[out_idx][OUT_W-1:0];
             if (out_idx < out_total) begin
                 if (out_pixel !== expected) begin
                     if (first_mismatch_idx == -1) begin
@@ -239,7 +239,7 @@ module tb_multi_kernel_demo;
         cfg_kernel_sel = 0; cfg_relu_en = 0;
         mismatches = 0; first_mismatch_idx = -1; out_idx = 0;
 
-        rst_n = 0; repeat (5) @(posedge clk); rst_n = 1; repeat (2) @(posedge clk);
+        rst_n = 0; #150; repeat (5) @(posedge clk); rst_n = 1; repeat (2) @(posedge clk);
 
         read_config("config_bank0.txt");
         read_img("input_image.txt", H*W);
@@ -254,9 +254,11 @@ module tb_multi_kernel_demo;
         load_kernel_bank1(1);
 
         $display("[TB] ==== Frame 1: selecting bank 0, NO reload since preload ====");
+        cfg_relu_en = 0; // Disable ReLU for the first frame
         run_one_frame(0, 0);
 
         $display("[TB] ==== Frame 2: selecting bank 1, NO reload since preload ====");
+        cfg_relu_en = 1; // Enable ReLU for the second frame to match the Python model
         run_one_frame(1, 1);
 
         $display("[TB] Total mismatches across both frames = %0d (first at global idx meaning varies per-frame; see above)", mismatches);
