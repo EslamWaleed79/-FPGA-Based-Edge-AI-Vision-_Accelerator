@@ -1,0 +1,9 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"tb_conv_accelerator_func_impl.v" \
+
+sv xil_defaultlib  \
+"../../../../../again.srcs/sources_1/imports/tb/tb_conv_accelerator.sv" \
+
+# Do not sort compile order
+nosort

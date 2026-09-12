@@ -1,0 +1,14 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../again.srcs/sources_1/imports/Desktop/project_1/rtl/control_fsm.sv" \
+"../../../../again.srcs/sources_1/imports/Desktop/project_2/samepad_update/samepad_update/rtl/line_buffer.sv" \
+"../../../../again.srcs/sources_1/imports/Desktop/project_1/rtl/mac_array.sv" \
+"../../../../again.srcs/sources_1/imports/Desktop/project_1/rtl/relu_activation.sv" \
+"../../../../again.srcs/sources_1/imports/Desktop/project_2/samepad_update/samepad_update/rtl/top_conv_accelerator.sv" \
+"../../../../again.srcs/sources_1/imports/tb/tb_multi_kernel_demo.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

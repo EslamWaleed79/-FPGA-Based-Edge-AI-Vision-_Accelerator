@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7z020clg400-1" LaunchTime="1789243542">
+  <File Type="PA-TCL" Name="top_conv_accelerator.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="top_conv_accelerator_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="top_conv_accelerator_reports.tcl"/>
+  <File Type="RDS-RDS" Name="top_conv_accelerator.vds"/>
+  <File Type="RDS-UTIL" Name="top_conv_accelerator_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="top_conv_accelerator_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="top_conv_accelerator.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="top_conv_accelerator_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="top_conv_accelerator_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/Desktop/project_1/rtl/control_fsm.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Vivado_Files/project_3.srcs/Users/compumarts/Desktop/project_2/project_2.srcs/sources_1/imports/Desktop/project_1/rtl/control_fsm.sv"/>
+        <Attr Name="ImportTime" Val="1788988039"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Desktop/project_2/samepad_update/samepad_update/rtl/line_buffer.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Vivado_Files/project_3.srcs/Users/compumarts/Desktop/project_2/project_2.srcs/sources_1/imports/Desktop/project_2/samepad_update/samepad_update/rtl/line_buffer.sv"/>
+        <Attr Name="ImportTime" Val="1788988039"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Desktop/project_1/rtl/mac_array.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Vivado_Files/project_3.srcs/Users/compumarts/Desktop/project_2/project_2.srcs/sources_1/imports/Desktop/project_1/rtl/mac_array.sv"/>
+        <Attr Name="ImportTime" Val="1788988039"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Desktop/project_1/rtl/relu_activation.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Vivado_Files/project_3.srcs/Users/compumarts/Desktop/project_2/project_2.srcs/sources_1/imports/Desktop/project_1/rtl/relu_activation.sv"/>
+        <Attr Name="ImportTime" Val="1788988039"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Desktop/project_2/samepad_update/samepad_update/rtl/top_conv_accelerator.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Vivado_Files/project_3.srcs/Users/compumarts/Desktop/project_2/project_2.srcs/sources_1/imports/Desktop/project_2/samepad_update/samepad_update/rtl/top_conv_accelerator.sv"/>
+        <Attr Name="ImportTime" Val="1788988039"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/tb/tb_multi_kernel_demo.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../-FPGA-Based-Edge-AI-Vision-_Accelerator-main/project_1/project_1.srcs/sources_1/imports/tb/tb_multi_kernel_demo.sv"/>
+        <Attr Name="ImportTime" Val="1789220738"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/tb/tb_edge_detection_demo.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../-FPGA-Based-Edge-AI-Vision-_Accelerator-main/project_1/project_1.srcs/sources_1/imports/tb/tb_edge_detection_demo.sv"/>
+        <Attr Name="ImportTime" Val="1789201613"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="top_conv_accelerator"/>
+      <Option Name="TopLib" Val="xil_defaultlib"/>
+      <Option Name="TopRTLFile" Val="$PSRCDIR/sources_1/imports/Desktop/project_2/samepad_update/samepad_update/rtl/top_conv_accelerator.sv"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/new/lkl.xdc">
+      <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Vivado_Files/project_3.srcs/Users/compumarts/Desktop/project_2/project_2.srcs/constrs_1/new/lkl.xdc"/>
+        <Attr Name="ImportTime" Val="1788988039"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/constrs_1/new/constraint.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

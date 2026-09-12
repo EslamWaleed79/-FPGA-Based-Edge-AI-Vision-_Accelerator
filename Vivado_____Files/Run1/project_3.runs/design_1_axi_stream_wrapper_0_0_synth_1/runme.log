@@ -1,0 +1,554 @@
+
+*** Running vivado
+    with args -log design_1_axi_stream_wrapper_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_axi_stream_wrapper_0_0.tcl
+
+
+****** Vivado v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source design_1_axi_stream_wrapper_0_0.tcl -notrace
+Command: synth_design -top design_1_axi_stream_wrapper_0_0 -part xc7z020clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 11724 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 478.043 ; gain = 94.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_stream_wrapper_0_0' [c:/Users/compumarts/Desktop/project_3/project_3.srcs/sources_1/bd/design_1/ip/design_1_axi_stream_wrapper_0_0/synth/design_1_axi_stream_wrapper_0_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'axi_stream_wrapper' [c:/Users/compumarts/Desktop/project_3/project_3.srcs/Users/compumarts/Desktop/project_2/project_2.srcs/sources_1/imports/rtl/axi_stream_wrapper.sv:1]
+	Parameter PIXEL_W bound to: 32'sb00000000000000000000000000001000 
+	Parameter KER_W bound to: 32'sb00000000000000000000000000001000 
+	Parameter N bound to: 32'sb00000000000000000000000000000011 
+	Parameter OUT_W bound to: 32'sb00000000000000000000000000010000 
+	Parameter IMG_W_MAX bound to: 32'sb00000000000000000000000000100000 
+	Parameter IMG_H_MAX bound to: 32'sb00000000000000000000000000100000 
+	Parameter NUM_KERNELS bound to: 32'sb00000000000000000000000000000100 
+	Parameter COL_CNT_W bound to: 32'sb00000000000000000000000000000110 
+	Parameter ROW_CNT_W bound to: 32'sb00000000000000000000000000000110 
+	Parameter KIDX_W bound to: 32'sb00000000000000000000000000000010 
+	Parameter KBANK_W bound to: 32'sb00000000000000000000000000000010 
+	Parameter M_AXIS_TDATA_WIDTH bound to: 32'sb00000000000000000000000000100000 
+	Parameter S_AXIS_TDATA_WIDTH bound to: 32'sb00000000000000000000000000100000 
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [c:/Users/compumarts/Desktop/project_3/project_3.srcs/Users/compumarts/Desktop/project_2/project_2.srcs/sources_1/imports/rtl/axi_stream_wrapper.sv:44]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [c:/Users/compumarts/Desktop/project_3/project_3.srcs/Users/compumarts/Desktop/project_2/project_2.srcs/sources_1/imports/rtl/axi_stream_wrapper.sv:45]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [c:/Users/compumarts/Desktop/project_3/project_3.srcs/Users/compumarts/Desktop/project_2/project_2.srcs/sources_1/imports/rtl/axi_stream_wrapper.sv:46]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [c:/Users/compumarts/Desktop/project_3/project_3.srcs/Users/compumarts/Desktop/project_2/project_2.srcs/sources_1/imports/rtl/axi_stream_wrapper.sv:47]
+INFO: [Synth 8-6157] synthesizing module 'top_conv_accelerator' [c:/Users/compumarts/Desktop/project_3/project_3.srcs/Users/compumarts/Desktop/project_2/project_2.srcs/sources_1/imports/Desktop/project_2/samepad_update/samepad_update/rtl/top_conv_accelerator.sv:47]
+	Parameter PIXEL_W bound to: 32'sb00000000000000000000000000001000 
+	Parameter KER_W bound to: 32'sb00000000000000000000000000001000 
+	Parameter N bound to: 32'sb00000000000000000000000000000011 
+	Parameter OUT_W bound to: 32'sb00000000000000000000000000010000 
+	Parameter IMG_W_MAX bound to: 32'sb00000000000000000000000000100000 
+	Parameter IMG_H_MAX bound to: 32'sb00000000000000000000000000100000 
+	Parameter NUM_KERNELS bound to: 32'sb00000000000000000000000000000100 
+	Parameter COL_CNT_W bound to: 32'sb00000000000000000000000000000110 
+	Parameter ROW_CNT_W bound to: 32'sb00000000000000000000000000000110 
+	Parameter CNT_W bound to: 32'sb00000000000000000000000000001011 
+	Parameter KIDX_W bound to: 32'sb00000000000000000000000000000010 
+	Parameter KBANK_W bound to: 32'sb00000000000000000000000000000010 
+INFO: [Synth 8-6157] synthesizing module 'control_fsm' [c:/Users/compumarts/Desktop/project_3/project_3.srcs/Users/compumarts/Desktop/project_2/project_2.srcs/sources_1/imports/Desktop/project_1/rtl/control_fsm.sv:29]
+	Parameter CNT_W bound to: 32'sb00000000000000000000000000001011 
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [c:/Users/compumarts/Desktop/project_3/project_3.srcs/Users/compumarts/Desktop/project_2/project_2.srcs/sources_1/imports/Desktop/project_1/rtl/control_fsm.sv:70]
+INFO: [Synth 8-6155] done synthesizing module 'control_fsm' (1#1) [c:/Users/compumarts/Desktop/project_3/project_3.srcs/Users/compumarts/Desktop/project_2/project_2.srcs/sources_1/imports/Desktop/project_1/rtl/control_fsm.sv:29]
+INFO: [Synth 8-6157] synthesizing module 'line_buffer' [c:/Users/compumarts/Desktop/project_3/project_3.srcs/Users/compumarts/Desktop/project_2/project_2.srcs/sources_1/imports/Desktop/project_2/samepad_update/samepad_update/rtl/line_buffer.sv:32]
+	Parameter PIXEL_W bound to: 32'sb00000000000000000000000000001000 
+	Parameter N bound to: 32'sb00000000000000000000000000000011 
+	Parameter IMG_W bound to: 32'sb00000000000000000000000000100000 
+	Parameter COL_CNT_W bound to: 32'sb00000000000000000000000000000110 
+	Parameter ROW_CNT_W bound to: 32'sb00000000000000000000000000000110 
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "distributed" *) [c:/Users/compumarts/Desktop/project_3/project_3.srcs/Users/compumarts/Desktop/project_2/project_2.srcs/sources_1/imports/Desktop/project_2/samepad_update/samepad_update/rtl/line_buffer.sv:70]
+INFO: [Synth 8-6155] done synthesizing module 'line_buffer' (2#1) [c:/Users/compumarts/Desktop/project_3/project_3.srcs/Users/compumarts/Desktop/project_2/project_2.srcs/sources_1/imports/Desktop/project_2/samepad_update/samepad_update/rtl/line_buffer.sv:32]
+INFO: [Synth 8-6157] synthesizing module 'mac_array' [c:/Users/compumarts/Desktop/project_3/project_3.srcs/Users/compumarts/Desktop/project_2/project_2.srcs/sources_1/imports/Desktop/project_1/rtl/mac_array.sv:32]
+	Parameter PIXEL_W bound to: 32'sb00000000000000000000000000001000 
+	Parameter KER_W bound to: 32'sb00000000000000000000000000001000 
+	Parameter N bound to: 32'sb00000000000000000000000000000011 
+	Parameter OUT_W bound to: 32'sb00000000000000000000000000010000 
+	Parameter PROD_W bound to: 32'sb00000000000000000000000000010000 
+	Parameter TAPS bound to: 32'sb00000000000000000000000000001001 
+	Parameter ACC_W bound to: 32'sb00000000000000000000000000010101 
+INFO: [Synth 8-6157] synthesizing module 'relu_activation' [c:/Users/compumarts/Desktop/project_3/project_3.srcs/Users/compumarts/Desktop/project_2/project_2.srcs/sources_1/imports/Desktop/project_1/rtl/relu_activation.sv:19]
+	Parameter ACC_W bound to: 32'sb00000000000000000000000000010101 
+	Parameter OUT_W bound to: 32'sb00000000000000000000000000010000 
+	Parameter OUT_MAX bound to: 16'sb0111111111111111 
+	Parameter OUT_MIN bound to: 16'sb1000000000000000 
+INFO: [Synth 8-6155] done synthesizing module 'relu_activation' (3#1) [c:/Users/compumarts/Desktop/project_3/project_3.srcs/Users/compumarts/Desktop/project_2/project_2.srcs/sources_1/imports/Desktop/project_1/rtl/relu_activation.sv:19]
+WARNING: [Synth 8-6014] Unused sequential element sum_reg was removed.  [c:/Users/compumarts/Desktop/project_3/project_3.srcs/Users/compumarts/Desktop/project_2/project_2.srcs/sources_1/imports/Desktop/project_1/rtl/mac_array.sv:101]
+INFO: [Synth 8-6155] done synthesizing module 'mac_array' (4#1) [c:/Users/compumarts/Desktop/project_3/project_3.srcs/Users/compumarts/Desktop/project_2/project_2.srcs/sources_1/imports/Desktop/project_1/rtl/mac_array.sv:32]
+INFO: [Synth 8-6155] done synthesizing module 'top_conv_accelerator' (5#1) [c:/Users/compumarts/Desktop/project_3/project_3.srcs/Users/compumarts/Desktop/project_2/project_2.srcs/sources_1/imports/Desktop/project_2/samepad_update/samepad_update/rtl/top_conv_accelerator.sv:47]
+INFO: [Synth 8-6155] done synthesizing module 'axi_stream_wrapper' (6#1) [c:/Users/compumarts/Desktop/project_3/project_3.srcs/Users/compumarts/Desktop/project_2/project_2.srcs/sources_1/imports/rtl/axi_stream_wrapper.sv:1]
+WARNING: [Synth 8-689] width (8) of port connection 's_axis_tdata' does not match port width (32) of module 'axi_stream_wrapper' [c:/Users/compumarts/Desktop/project_3/project_3.srcs/sources_1/bd/design_1/ip/design_1_axi_stream_wrapper_0_0/synth/design_1_axi_stream_wrapper_0_0.sv:150]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_stream_wrapper_0_0' (7#1) [c:/Users/compumarts/Desktop/project_3/project_3.srcs/sources_1/bd/design_1/ip/design_1_axi_stream_wrapper_0_0/synth/design_1_axi_stream_wrapper_0_0.sv:58]
+WARNING: [Synth 8-3331] design control_fsm has unconnected port cfg_pix_total[10]
+WARNING: [Synth 8-3331] design control_fsm has unconnected port cfg_pix_total[9]
+WARNING: [Synth 8-3331] design control_fsm has unconnected port cfg_pix_total[8]
+WARNING: [Synth 8-3331] design control_fsm has unconnected port cfg_pix_total[7]
+WARNING: [Synth 8-3331] design control_fsm has unconnected port cfg_pix_total[6]
+WARNING: [Synth 8-3331] design control_fsm has unconnected port cfg_pix_total[5]
+WARNING: [Synth 8-3331] design control_fsm has unconnected port cfg_pix_total[4]
+WARNING: [Synth 8-3331] design control_fsm has unconnected port cfg_pix_total[3]
+WARNING: [Synth 8-3331] design control_fsm has unconnected port cfg_pix_total[2]
+WARNING: [Synth 8-3331] design control_fsm has unconnected port cfg_pix_total[1]
+WARNING: [Synth 8-3331] design control_fsm has unconnected port cfg_pix_total[0]
+WARNING: [Synth 8-3331] design axi_stream_wrapper has unconnected port s_axis_tdata[31]
+WARNING: [Synth 8-3331] design axi_stream_wrapper has unconnected port s_axis_tdata[30]
+WARNING: [Synth 8-3331] design axi_stream_wrapper has unconnected port s_axis_tdata[29]
+WARNING: [Synth 8-3331] design axi_stream_wrapper has unconnected port s_axis_tdata[28]
+WARNING: [Synth 8-3331] design axi_stream_wrapper has unconnected port s_axis_tdata[27]
+WARNING: [Synth 8-3331] design axi_stream_wrapper has unconnected port s_axis_tdata[26]
+WARNING: [Synth 8-3331] design axi_stream_wrapper has unconnected port s_axis_tdata[25]
+WARNING: [Synth 8-3331] design axi_stream_wrapper has unconnected port s_axis_tdata[24]
+WARNING: [Synth 8-3331] design axi_stream_wrapper has unconnected port s_axis_tdata[23]
+WARNING: [Synth 8-3331] design axi_stream_wrapper has unconnected port s_axis_tdata[22]
+WARNING: [Synth 8-3331] design axi_stream_wrapper has unconnected port s_axis_tdata[21]
+WARNING: [Synth 8-3331] design axi_stream_wrapper has unconnected port s_axis_tdata[20]
+WARNING: [Synth 8-3331] design axi_stream_wrapper has unconnected port s_axis_tdata[19]
+WARNING: [Synth 8-3331] design axi_stream_wrapper has unconnected port s_axis_tdata[18]
+WARNING: [Synth 8-3331] design axi_stream_wrapper has unconnected port s_axis_tdata[17]
+WARNING: [Synth 8-3331] design axi_stream_wrapper has unconnected port s_axis_tdata[16]
+WARNING: [Synth 8-3331] design axi_stream_wrapper has unconnected port s_axis_tdata[15]
+WARNING: [Synth 8-3331] design axi_stream_wrapper has unconnected port s_axis_tdata[14]
+WARNING: [Synth 8-3331] design axi_stream_wrapper has unconnected port s_axis_tdata[13]
+WARNING: [Synth 8-3331] design axi_stream_wrapper has unconnected port s_axis_tdata[12]
+WARNING: [Synth 8-3331] design axi_stream_wrapper has unconnected port s_axis_tdata[11]
+WARNING: [Synth 8-3331] design axi_stream_wrapper has unconnected port s_axis_tdata[10]
+WARNING: [Synth 8-3331] design axi_stream_wrapper has unconnected port s_axis_tdata[9]
+WARNING: [Synth 8-3331] design axi_stream_wrapper has unconnected port s_axis_tdata[8]
+WARNING: [Synth 8-3331] design axi_stream_wrapper has unconnected port s_axis_tlast
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 532.285 ; gain = 148.242
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 532.285 ; gain = 148.242
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 532.285 ; gain = 148.242
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/compumarts/Desktop/project_3/project_3.srcs/Users/compumarts/Desktop/project_2/project_2.srcs/constrs_1/new/lkl.xdc] for cell 'inst'
+WARNING: [Vivado 12-627] No clocks matched 'clk_fpga_0'. [c:/Users/compumarts/Desktop/project_3/project_3.srcs/Users/compumarts/Desktop/project_2/project_2.srcs/constrs_1/new/lkl.xdc:2]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [c:/Users/compumarts/Desktop/project_3/project_3.srcs/Users/compumarts/Desktop/project_2/project_2.srcs/constrs_1/new/lkl.xdc:2]
+WARNING: [Vivado 12-627] No clocks matched 'clk'. [c:/Users/compumarts/Desktop/project_3/project_3.srcs/Users/compumarts/Desktop/project_2/project_2.srcs/constrs_1/new/lkl.xdc:2]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [c:/Users/compumarts/Desktop/project_3/project_3.srcs/Users/compumarts/Desktop/project_2/project_2.srcs/constrs_1/new/lkl.xdc:2]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_clocks clk_fpga_0]'. [c:/Users/compumarts/Desktop/project_3/project_3.srcs/Users/compumarts/Desktop/project_2/project_2.srcs/constrs_1/new/lkl.xdc:2]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+Finished Parsing XDC File [c:/Users/compumarts/Desktop/project_3/project_3.srcs/Users/compumarts/Desktop/project_2/project_2.srcs/constrs_1/new/lkl.xdc] for cell 'inst'
+Parsing XDC File [C:/Users/compumarts/Desktop/project_3/project_3.runs/design_1_axi_stream_wrapper_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/compumarts/Desktop/project_3/project_3.runs/design_1_axi_stream_wrapper_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.058 . Memory (MB): peak = 895.848 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 895.848 ; gain = 511.805
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 895.848 ; gain = 511.805
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for inst. (constraint file  C:/Users/compumarts/Desktop/project_3/project_3.runs/design_1_axi_stream_wrapper_0_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 895.848 ; gain = 511.805
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'control_fsm'
+INFO: [Synth 8-5544] ROM "out_cnt_n" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "done" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "busy" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "in_ready" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "frame_clear" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_n" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "row_ram_reg[0][0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "row_ram_reg[0][1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "row_ram_reg[0][2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "row_ram_reg[0][3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "row_ram_reg[0][4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "row_ram_reg[0][5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "row_ram_reg[0][6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "row_ram_reg[0][7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "row_ram_reg[0][8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "row_ram_reg[0][9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "row_ram_reg[0][10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "row_ram_reg[0][11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "row_ram_reg[0][12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "row_ram_reg[0][13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "row_ram_reg[0][14]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "row_ram_reg[0][15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "row_ram_reg[0][16]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "row_ram_reg[0][17]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "row_ram_reg[0][18]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "row_ram_reg[0][19]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "row_ram_reg[0][20]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "row_ram_reg[0][21]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "row_ram_reg[0][22]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "row_ram_reg[0][23]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "row_ram_reg[0][24]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "row_ram_reg[0][25]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "row_ram_reg[0][26]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "row_ram_reg[0][27]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "row_ram_reg[0][28]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "row_ram_reg[0][29]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "row_ram_reg[0][30]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "row_ram_reg[0][31]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "kernel_regs_reg[0][0][0]" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "kernel_regs_reg[0][0][1]" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "kernel_regs_reg[0][0][2]" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  S_IDLE |                             0001 |                              000
+                  S_LOAD |                             0010 |                              001
+                   S_RUN |                             0100 |                              010
+                  S_DONE |                             1000 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'control_fsm'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 895.848 ; gain = 511.805
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   9 Input     21 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 2     
++---Registers : 
+	               21 Bit    Registers := 1     
+	               16 Bit    Registers := 11    
+	               11 Bit    Registers := 1     
+	                8 Bit    Registers := 109   
+	                6 Bit    Registers := 9     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 9     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 3     
+	   4 Input     11 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 9     
+	   4 Input      8 Bit        Muxes := 9     
+	   2 Input      6 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 84    
+	   4 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module control_fsm 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 1     
++---Registers : 
+	               11 Bit    Registers := 1     
++---Muxes : 
+	   4 Input     11 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 3     
+Module line_buffer 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 2     
++---Registers : 
+	                8 Bit    Registers := 73    
+	                6 Bit    Registers := 5     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 9     
+	   2 Input      6 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 34    
+Module relu_activation 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 2     
+Module mac_array 
+Detailed RTL Component Info : 
++---Adders : 
+	   9 Input     21 Bit       Adders := 1     
++---Registers : 
+	               21 Bit    Registers := 1     
+	               16 Bit    Registers := 10    
+	                1 Bit    Registers := 3     
+Module top_conv_accelerator 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 36    
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   4 Input      8 Bit        Muxes := 9     
+	   2 Input      1 Bit        Muxes := 48    
+Module axi_stream_wrapper 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+	                6 Bit    Registers := 4     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3331] design control_fsm has unconnected port cfg_pix_total[10]
+WARNING: [Synth 8-3331] design control_fsm has unconnected port cfg_pix_total[9]
+WARNING: [Synth 8-3331] design control_fsm has unconnected port cfg_pix_total[8]
+WARNING: [Synth 8-3331] design control_fsm has unconnected port cfg_pix_total[7]
+WARNING: [Synth 8-3331] design control_fsm has unconnected port cfg_pix_total[6]
+WARNING: [Synth 8-3331] design control_fsm has unconnected port cfg_pix_total[5]
+WARNING: [Synth 8-3331] design control_fsm has unconnected port cfg_pix_total[4]
+WARNING: [Synth 8-3331] design control_fsm has unconnected port cfg_pix_total[3]
+WARNING: [Synth 8-3331] design control_fsm has unconnected port cfg_pix_total[2]
+WARNING: [Synth 8-3331] design control_fsm has unconnected port cfg_pix_total[1]
+WARNING: [Synth 8-3331] design control_fsm has unconnected port cfg_pix_total[0]
+WARNING: [Synth 8-3331] design axi_stream_wrapper has unconnected port s_axis_tdata[31]
+WARNING: [Synth 8-3331] design axi_stream_wrapper has unconnected port s_axis_tdata[30]
+WARNING: [Synth 8-3331] design axi_stream_wrapper has unconnected port s_axis_tdata[29]
+WARNING: [Synth 8-3331] design axi_stream_wrapper has unconnected port s_axis_tdata[28]
+WARNING: [Synth 8-3331] design axi_stream_wrapper has unconnected port s_axis_tdata[27]
+WARNING: [Synth 8-3331] design axi_stream_wrapper has unconnected port s_axis_tdata[26]
+WARNING: [Synth 8-3331] design axi_stream_wrapper has unconnected port s_axis_tdata[25]
+WARNING: [Synth 8-3331] design axi_stream_wrapper has unconnected port s_axis_tdata[24]
+WARNING: [Synth 8-3331] design axi_stream_wrapper has unconnected port s_axis_tdata[23]
+WARNING: [Synth 8-3331] design axi_stream_wrapper has unconnected port s_axis_tdata[22]
+WARNING: [Synth 8-3331] design axi_stream_wrapper has unconnected port s_axis_tdata[21]
+WARNING: [Synth 8-3331] design axi_stream_wrapper has unconnected port s_axis_tdata[20]
+WARNING: [Synth 8-3331] design axi_stream_wrapper has unconnected port s_axis_tdata[19]
+WARNING: [Synth 8-3331] design axi_stream_wrapper has unconnected port s_axis_tdata[18]
+WARNING: [Synth 8-3331] design axi_stream_wrapper has unconnected port s_axis_tdata[17]
+WARNING: [Synth 8-3331] design axi_stream_wrapper has unconnected port s_axis_tdata[16]
+WARNING: [Synth 8-3331] design axi_stream_wrapper has unconnected port s_axis_tdata[15]
+WARNING: [Synth 8-3331] design axi_stream_wrapper has unconnected port s_axis_tdata[14]
+WARNING: [Synth 8-3331] design axi_stream_wrapper has unconnected port s_axis_tdata[13]
+WARNING: [Synth 8-3331] design axi_stream_wrapper has unconnected port s_axis_tdata[12]
+WARNING: [Synth 8-3331] design axi_stream_wrapper has unconnected port s_axis_tdata[11]
+WARNING: [Synth 8-3331] design axi_stream_wrapper has unconnected port s_axis_tdata[10]
+WARNING: [Synth 8-3331] design axi_stream_wrapper has unconnected port s_axis_tdata[9]
+WARNING: [Synth 8-3331] design axi_stream_wrapper has unconnected port s_axis_tdata[8]
+WARNING: [Synth 8-3331] design axi_stream_wrapper has unconnected port s_axis_tlast
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 895.848 ; gain = 511.805
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:36 ; elapsed = 00:00:41 . Memory (MB): peak = 895.848 ; gain = 511.805
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:36 ; elapsed = 00:00:41 . Memory (MB): peak = 897.609 ; gain = 513.566
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:37 ; elapsed = 00:00:42 . Memory (MB): peak = 972.637 ; gain = 588.594
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:37 ; elapsed = 00:00:42 . Memory (MB): peak = 972.637 ; gain = 588.594
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:37 ; elapsed = 00:00:42 . Memory (MB): peak = 972.637 ; gain = 588.594
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:37 ; elapsed = 00:00:43 . Memory (MB): peak = 972.637 ; gain = 588.594
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:37 ; elapsed = 00:00:43 . Memory (MB): peak = 972.637 ; gain = 588.594
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:38 ; elapsed = 00:00:43 . Memory (MB): peak = 972.637 ; gain = 588.594
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:38 ; elapsed = 00:00:43 . Memory (MB): peak = 972.637 ; gain = 588.594
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++-------------------+----------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name        | RTL Name                         | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++-------------------+----------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|axi_stream_wrapper | u_core/u_mac_array/out_valid_reg | 4      | 1     | YES          | NO                 | YES               | 1      | 0       | 
++-------------------+----------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |   154|
+|2     |LUT1   |     6|
+|3     |LUT2   |   154|
+|4     |LUT3   |   380|
+|5     |LUT4   |   252|
+|6     |LUT5   |   155|
+|7     |LUT6   |   669|
+|8     |MUXF7  |    64|
+|9     |SRL16E |     1|
+|10    |FDCE   |   635|
+|11    |FDPE   |     2|
+|12    |FDRE   |   513|
++------+-------+------+
+
+Report Instance Areas: 
++------+--------------------+---------------------+------+
+|      |Instance            |Module               |Cells |
++------+--------------------+---------------------+------+
+|1     |top                 |                     |  2985|
+|2     |  inst              |axi_stream_wrapper   |  2985|
+|3     |    u_core          |top_conv_accelerator |  2940|
+|4     |      u_fsm         |control_fsm          |    79|
+|5     |      u_line_buffer |line_buffer          |  1262|
+|6     |      u_mac_array   |mac_array            |  1176|
+|7     |        u_relu      |relu_activation      |    20|
++------+--------------------+---------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:38 ; elapsed = 00:00:43 . Memory (MB): peak = 972.637 ; gain = 588.594
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 36 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:26 ; elapsed = 00:00:31 . Memory (MB): peak = 972.637 ; gain = 225.031
+Synthesis Optimization Complete : Time (s): cpu = 00:00:38 ; elapsed = 00:00:43 . Memory (MB): peak = 972.637 ; gain = 588.594
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 218 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+76 Infos, 76 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:39 ; elapsed = 00:00:45 . Memory (MB): peak = 972.637 ; gain = 600.094
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/compumarts/Desktop/project_3/project_3.runs/design_1_axi_stream_wrapper_0_0_synth_1/design_1_axi_stream_wrapper_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1482] Added synthesis output to IP cache for IP c:/Users/compumarts/Desktop/project_3/project_3.srcs/sources_1/bd/design_1/ip/design_1_axi_stream_wrapper_0_0/design_1_axi_stream_wrapper_0_0.xci
+INFO: [Coretcl 2-1174] Renamed 6 cell refs.
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/compumarts/Desktop/project_3/project_3.runs/design_1_axi_stream_wrapper_0_0_synth_1/design_1_axi_stream_wrapper_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_axi_stream_wrapper_0_0_utilization_synth.rpt -pb design_1_axi_stream_wrapper_0_0_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.036 . Memory (MB): peak = 972.637 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu Sep 10 00:18:07 2026...

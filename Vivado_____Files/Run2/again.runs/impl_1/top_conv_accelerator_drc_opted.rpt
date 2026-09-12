@@ -1,0 +1,94 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Sat Sep 12 23:06:57 2026
+| Host         : DESKTOP-1IDCUPR running 64-bit major release  (build 9200)
+| Command      : report_drc -file top_conv_accelerator_drc_opted.rpt -pb top_conv_accelerator_drc_opted.pb -rpx top_conv_accelerator_drc_opted.rpx
+| Design       : top_conv_accelerator
+| Device       : xc7z020clg400-1
+| Speed File   : -1
+| Design State : Synthesized
+---------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 11
++--------+------------------+----------------------------+------------+
+| Rule   | Severity         | Description                | Violations |
++--------+------------------+----------------------------+------------+
+| NSTD-1 | Critical Warning | Unspecified I/O Standard   | 1          |
+| UCIO-1 | Critical Warning | Unconstrained Logical Port | 1          |
+| IOSR-1 | Warning          | IOB set reset sharing      | 8          |
+| ZPS7-1 | Warning          | PS7 block required         | 1          |
++--------+------------------+----------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+NSTD-1#1 Critical Warning
+Unspecified I/O Standard  
+62 out of 62 logical ports use I/O standard (IOSTANDARD) value 'DEFAULT', instead of a user assigned specific value. This may cause I/O contention or incompatibility with the board power or connectivity affecting performance, signal integrity or in extreme cases cause damage to the device or the components to which it is connected. To correct this violation, specify all I/O standards. This design will fail to generate a bitstream unless all logical ports have a user specified I/O standard value defined. To allow bitstream creation with unspecified I/O standard values (not recommended), use this command: set_property SEVERITY {Warning} [get_drc_checks NSTD-1].  NOTE: When using the Vivado Runs infrastructure (e.g. launch_runs Tcl command), add this command to a .tcl file and add that file as a pre-hook for write_bitstream step for the implementation run. Problem ports: cfg_img_height[5:0], cfg_img_width[5:0], cfg_kernel_sel[1:0], cfg_kernel_wr_bank[1:0], cfg_kernel_wr_col[1:0], cfg_kernel_wr_data[7:0], cfg_kernel_wr_row[1:0], in_pixel[7:0], out_pixel[15:0], busy, cfg_kernel_wr_en, cfg_relu_en, clk, done, in_ready (the first 15 of 19 listed).
+Related violations: <none>
+
+UCIO-1#1 Critical Warning
+Unconstrained Logical Port  
+62 out of 62 logical ports have no user assigned specific location constraint (LOC). This may cause I/O contention or incompatibility with the board power or connectivity affecting performance, signal integrity or in extreme cases cause damage to the device or the components to which it is connected. To correct this violation, specify all pin locations. This design will fail to generate a bitstream unless all logical ports have a user specified site LOC constraint defined.  To allow bitstream creation with unspecified pin locations (not recommended), use this command: set_property SEVERITY {Warning} [get_drc_checks UCIO-1].  NOTE: When using the Vivado Runs infrastructure (e.g. launch_runs Tcl command), add this command to a .tcl file and add that file as a pre-hook for write_bitstream step for the implementation run.  Problem ports: cfg_img_height[5:0], cfg_img_width[5:0], cfg_kernel_sel[1:0], cfg_kernel_wr_bank[1:0], cfg_kernel_wr_col[1:0], cfg_kernel_wr_data[7:0], cfg_kernel_wr_row[1:0], in_pixel[7:0], out_pixel[15:0], busy, cfg_kernel_wr_en, cfg_relu_en, clk, done, in_ready (the first 15 of 19 listed).
+Related violations: <none>
+
+IOSR-1#1 Warning
+IOB set reset sharing  
+IO cfg_kernel_wr_data[0] connects to flops which have these u_mac_array/acc_s2_reg[0]_0, kernel_regs[1][0][2][0]_i_1_n_0, kernel_regs[2][1][0][7]_i_2_n_0, active_bank_r[0]_i_1_n_0 set/reset signals.  For optimal IOB flop packing there should be only one set/reset signal coming into the IOB.
+Related violations: <none>
+
+IOSR-1#2 Warning
+IOB set reset sharing  
+IO cfg_kernel_wr_data[1] connects to flops which have these kernel_regs[1][0][2][0]_i_1_n_0, kernel_regs[2][1][0][7]_i_2_n_0, active_bank_r[0]_i_1_n_0 set/reset signals.  For optimal IOB flop packing there should be only one set/reset signal coming into the IOB.
+Related violations: <none>
+
+IOSR-1#3 Warning
+IOB set reset sharing  
+IO cfg_kernel_wr_data[2] connects to flops which have these kernel_regs[1][0][2][0]_i_1_n_0, kernel_regs[2][1][0][7]_i_2_n_0, active_bank_r[0]_i_1_n_0 set/reset signals.  For optimal IOB flop packing there should be only one set/reset signal coming into the IOB.
+Related violations: <none>
+
+IOSR-1#4 Warning
+IOB set reset sharing  
+IO cfg_kernel_wr_data[3] connects to flops which have these kernel_regs[1][0][2][0]_i_1_n_0, kernel_regs[2][1][0][7]_i_2_n_0, active_bank_r[0]_i_1_n_0 set/reset signals.  For optimal IOB flop packing there should be only one set/reset signal coming into the IOB.
+Related violations: <none>
+
+IOSR-1#5 Warning
+IOB set reset sharing  
+IO cfg_kernel_wr_data[4] connects to flops which have these kernel_regs[1][0][2][0]_i_1_n_0, kernel_regs[2][1][0][7]_i_2_n_0, active_bank_r[0]_i_1_n_0 set/reset signals.  For optimal IOB flop packing there should be only one set/reset signal coming into the IOB.
+Related violations: <none>
+
+IOSR-1#6 Warning
+IOB set reset sharing  
+IO cfg_kernel_wr_data[5] connects to flops which have these kernel_regs[1][0][2][0]_i_1_n_0, kernel_regs[2][1][0][7]_i_2_n_0, active_bank_r[0]_i_1_n_0 set/reset signals.  For optimal IOB flop packing there should be only one set/reset signal coming into the IOB.
+Related violations: <none>
+
+IOSR-1#7 Warning
+IOB set reset sharing  
+IO cfg_kernel_wr_data[6] connects to flops which have these kernel_regs[1][0][2][0]_i_1_n_0, kernel_regs[2][1][0][7]_i_2_n_0, active_bank_r[0]_i_1_n_0 set/reset signals.  For optimal IOB flop packing there should be only one set/reset signal coming into the IOB.
+Related violations: <none>
+
+IOSR-1#8 Warning
+IOB set reset sharing  
+IO cfg_kernel_wr_data[7] connects to flops which have these kernel_regs[1][0][2][0]_i_1_n_0, kernel_regs[2][1][0][7]_i_2_n_0, active_bank_r[0]_i_1_n_0 set/reset signals.  For optimal IOB flop packing there should be only one set/reset signal coming into the IOB.
+Related violations: <none>
+
+ZPS7-1#1 Warning
+PS7 block required  
+The PS7 cell must be used in this Zynq design in order to enable correct default configuration.
+Related violations: <none>
+
+

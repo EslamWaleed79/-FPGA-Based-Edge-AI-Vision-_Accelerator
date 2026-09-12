@@ -1,0 +1,15 @@
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+[TB] config.txt -> H=32 W=32 N=3 OUT_W=16 RELU=0
+[TB] Loading kernel...
+[TB] Kernel loading complete.
+
+============================================================
+TEST RESULT
+============================================================
+[TB] Captured 1024 output pixels (expected 1024)
+[TB] Mismatches = 0
+[TB] TEST PASSED
+============================================================
+$finish called at time : 15952500 ps : File "C:/Users/compumarts/Desktop/again/again.srcs/sources_1/imports/tb/tb_conv_accelerator.sv" Line 279
+again.srcs/sources_1/imports/tb/tb_multi_kernel_demo.sv" Line 270

@@ -1,0 +1,7 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/compumarts/Desktop/again/again.sim/sim_1/impl/func/xsim/tb_conv_accelerator_func_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control_fsm
+INFO: [VRFC 10-311] analyzing module line_buffer
+INFO: [VRFC 10-311] analyzing module mac_array
+INFO: [VRFC 10-311] analyzing module relu_activation
+INFO: [VRFC 10-311] analyzing module top_conv_accelerator
+INFO: [VRFC 10-311] analyzing module glbl
