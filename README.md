@@ -4,7 +4,6 @@
 **Authors:** Eslam Waleed | Ain Shams University  
 **Target Hardware:** Xilinx Zynq-7000 SoC (PYNQ-Z2)
 
-![Project Board Demo](link-to-your-gif-or-image-here.gif) *(Add a 15-second GIF of the board working here!)*
 
 ## 📌 Project Overview
 This repository contains the RTL, verification models, and implementation scripts for a high-performance, ultra-low-power Edge-AI hardware accelerator. Designed specifically for spatial filtering (e.g., multi-kernel Sobel edge detection) in resource-constrained environments, this architecture deliberately avoids the use of dedicated DSP slices and Block RAM to maximize resource efficiency and minimize dynamic power.
