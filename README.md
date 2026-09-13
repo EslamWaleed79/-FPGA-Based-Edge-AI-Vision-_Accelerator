@@ -1,7 +1,7 @@
 # FPGA-Based Edge-AI Vision Accelerator
 
 **Ultra-Low Power, Zero-DSP, Zero-BRAM Spatial Convolution Engine**  
-**Authors:** Eslam Waleed & Omar | Ain Shams University  
+**Authors:** Eslam Waleed | Ain Shams University  
 **Target Hardware:** Xilinx Zynq-7000 SoC (PYNQ-Z2)
 
 ![Project Board Demo](link-to-your-gif-or-image-here.gif) *(Add a 15-second GIF of the board working here!)*
